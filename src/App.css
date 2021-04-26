@@ -1,38 +1,93 @@
-.App {
+@font-face {
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+}
+
+/* temporary component */
+.titletext {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #1F2124;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: 'NanumSquare';
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main-icon {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  user-select: none;
+  float: left;
 }
 
-.App-link {
-  color: #61dafb;
+.main-img {
+  padding: 10px 20px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .nav .text-link:not(.active) {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .nav .icon {
+    float: right;
+    display: block;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
+
+}
+
+
+.nav {
+  background-color: #2f3136;
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 100%;
+  height: 65px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  display: none;
+  color: #fff;
+}
+
+.text-link {
+  color: #fff;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  .active {
+    background-color: #2f3136;
+    display: block;
+    float: none;
+    width: 92vw;
+    position: relative;
+  }
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
 }
