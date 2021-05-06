@@ -1,20 +1,60 @@
-/* temporary component */
+.section1 {
+  margin: 200px 50px;
+}
+
 .titletext {
-  font-size: 30px;
+  font-size: 45px;
+  font-weight: 900;
   color: white;
-  padding: 10px;
-  text-align: center;
+  margin: 0;
+}
+
+.smalltext {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 20px 0 30px 0;
+}
+
+.title-button {
+  flex: 0 1 auto;
+  margin: 0 10px 0 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.invite-button {
+  background-color: #61903B;
+}
+
+.title-button:hover {
+  filter: brightness(70%);
+}
+
+.button-container {
+  display: flex;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
   background-color: #1F2124;
-  overflow-x: hidden;
 }
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 * {
   font-family: 'NanumSquare';
   font-weight: 700;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .main-icon {
@@ -29,6 +69,12 @@ body {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 800px) {
+  .section1 {
+    margin: 200px 60px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .nav .text-link:not(.active) {
     display: none;
@@ -40,6 +86,28 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .active {
+    background-color: #2f3136;
+    display: block;
+    float: none;
+    width: 100vw;
+    padding: 0 0 20px 0;
+    transition: all 0.1s ease-out;
+  }
+
+  .active:not(:first-child) {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .section1 {
+    text-align: center;
+  }
+
+  .button-container {
+    justify-content: center;
   }
 
 }
@@ -65,26 +133,10 @@ body {
 .text-link {
   color: #fff;
   padding: 20px;
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   user-select: none;
 }
-
-@media screen and (max-width: 600px) {
-  .active {
-    background-color: #2f3136;
-    display: block;
-    float: none;
-    width: 100vw;
-    padding: 0 0 20px 0;
-  }
-
-  .active:not(:first-child) {
-    position: relative;
-    padding: 20px;
-  }
-}
-
 
 .footer {
   text-align: center;
