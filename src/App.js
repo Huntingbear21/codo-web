@@ -1,14 +1,15 @@
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import { Section1 } from './components/Sections';
-import './App.css';
+import Layout from './components/Layout';
+import { Section1, Section2, Section3 } from './components/Sections';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Section1 />
-      <Footer />
+      <Layout>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+      </Layout>
     </div>
   );
 }

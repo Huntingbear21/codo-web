@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 class NavBar extends React.Component {
@@ -21,8 +22,8 @@ class NavBar extends React.Component {
         return (
             <nav className="nav">
                 <div>
-                    <a href="/" className="main-icon"><img className="main-img" src="assets/일러스트7.jpg" /></a>
-                    <a href="https://huntingbear21.ga/" className="text-link">My Website</a>
+                    <Link to="/" className="main-icon"><img className="main-img" src="assets/일러스트7.jpg" /></Link>
+                    <a href="https://discord.gg/qX7Aah82x5" className="text-link">Support Server</a>
                     </div>
                     <FontAwesomeIcon id="togglebar-control" className="icon" icon={faBars }/>
             </nav>
