@@ -44,11 +44,39 @@
   background-color: #151716;
 }
 
+.blurple {
+  background-color: #7289DA;
+}
+
 .spacebetween {
   display: flex;
   justify-content:space-around;
   margin: 0 0;
   padding: 50vh 0;
+}
+
+.section5-smallbar {
+  text-align: center;
+  color: #fff;
+  margin: 10vh 10vw;
+}
+
+.section5-title {
+  font-size: 30px;
+  margin-top: 20vh;
+  color: #fff;
+}
+
+.section5-text {
+  margin: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section5 {
+  padding-top: 10vh;
 }
 
 .smalltext {
@@ -75,7 +103,7 @@
   background-color: #61903B;
 }
 
-.title-button:hover, .text-link:hover {
+.title-button:hover, .text-link:hover, .p-text-link:hover {
   filter: brightness(70%);
 }
 
@@ -240,6 +268,12 @@ body {
   display: inline-block;
   text-decoration: none;
   user-select: none;
+  transition: all 0.2s;
+}
+
+.p-text-link {
+  text-decoration: none;
+  color: #fff;
   transition: all 0.2s;
 }
 

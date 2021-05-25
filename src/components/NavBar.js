@@ -24,6 +24,7 @@ class NavBar extends React.Component {
                 <div>
                     <Link to="/" className="main-icon"><img className="main-img" src="assets/일러스트7.jpg" /></Link>
                     <a href="https://discord.gg/qX7Aah82x5" className="text-link">Support Server</a>
+                    <a href="https://discordapp.com/api/oauth2/authorize?client_id=687886541619462293&permissions=522304&scope=bot" className="text-link">Invite</a>
                     </div>
                     <FontAwesomeIcon id="togglebar-control" className="icon" icon={faBars }/>
             </nav>

@@ -9,7 +9,7 @@ class Layout extends React.Component {
         return (
             <>
                 <NavBar />
-                <Warning text="⚠️ This website is under maintenance."/>
+                <Warning text="⚠️ Docs, policy pages are being prepared."/>
                     {this.props.children}
                 <Footer />
             </>
